@@ -30,13 +30,13 @@ This Weather App provides real-time weather information based on the user's loca
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/nareshbodapatla/kraftshala-weatherapp
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd weather-app
+cd kraftshala-weatherapp
 ```
 
 3. Install the dependencies:
