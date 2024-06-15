@@ -1,38 +1,177 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-image: url("D:\kraftshala\weatherapp\src\images\background.jpg");
+  background-size: cover;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.city {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.city .title {
+  margin-bottom: 10px;
+}
+
+.city .mb-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city .mb-icon p {
+  margin: 10px 0;
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dmy {
+  margin-bottom: 20px;
+}
+
+.temperature {
+  font-size: 2em;
+}
+
+.forecast {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.forecast-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 70%;
+  max-width: 300px;
+}
+
+img{
+  background-color: bisque;
+  margin-left: 0px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30px;
+  height: 35px;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.cityHead {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.temp {
+  font-weight: bold;
+}
+
+
+
+.current-time {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.current-date {
+  font-size: 1.2em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .city {
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .temperature {
+    font-size: 1.5em;
+  }
+
+  .search-bar {
+    width: 60%;
+  }
+
+  .current-time {
+    font-size: 1.2em;
+  }
+
+  .current-date {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .city {
+    padding: 10px;
+  }
+
+  .temperature {
+    font-size: 1.2em;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .current-time {
+    font-size: 1em;
+  }
+
+  .current-date {
+    font-size: 0.8em;
+  }
+
+  .img-box img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .cityHead {
+    font-size: 1.2em;
   }
 }
